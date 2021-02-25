@@ -118,27 +118,25 @@ exports.reglevelahf = (command, pushname, getLevelingLevel, sender, ahf) => {
 
 exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp, _registered, uangku, role, premi) => { 
 	return `
-┏━━━⊱  *ABOUT USER*  ⊰━━┓
-┣⊱ *Nama* : ${pushname}
+┏━━━⊱  *INFO DE USUARIO*  ⊰━━┓
+┣⊱ *Nombre* : ${pushname}
 ┣⊱ *Premium* : ${premi}
-┣⊱ *Nomer* : wa.me/${sender.split("@")[0]}
-┣⊱ *Uang mu* : Rp${uangku}
-┣⊱ *XP* : ${getLevelingXp(sender)}/${reqXp} 
-┣⊱ *Level* : ${getLevelingLevel(sender)}
-┣⊱ *Role* : ${role}
-┣⊱ *User register* : ${_registered.length}
-┗━━━⊱  ⸨ *AFFIS* ⸩  ⊰━━━━┛
-
+┣⊱ *Numero* : wa.me/${sender.split("@")[0]}
+┣⊱ *Coind* : Rp${uangku}
+┣⊱ *Exp* : ${getLevelingXp(sender)}/${reqXp} 
+┣⊱ *Nivel* : ${getLevelingLevel(sender)}
+┣⊱ *Rol* : ${role}
+┣⊱ *Usuario registrado* : ${_registered.length}
+┗━━━⊱  ⸨ ****** ⸩  ⊰━━━━┛
  *${prefix}info*
  *${prefix}donasi*
  *${prefix}owner*
-
-${a}❏MAKER MENU${a}
+${a}❏MENU MAKER${a}
  ${a}╿•${prefix}sticker${a}
  ${a}╿•${prefix}quotemaker${a}
  ${a}╿•${prefix}qrcode${a}
  ${a}╰•${prefix}ttp${a}
-${a}❏FUN MENU${a}
+${a}❏MENU DIVERTIDO${a}
  ${a}╿•${prefix}lirik${a}
  ${a}╿•${prefix}artinama${a}
  ${a}╿•${prefix}chord${a}
@@ -153,7 +151,7 @@ ${a}❏FUN MENU${a}
 ${a}❏MUTUAL${a}
  ${a}╿•${prefix}mutual${a}
  ${a}╰•${prefix}next${a}
-${a}❏MEDIA MENU${a}
+${a}❏MULTIMEDIA${a}
  ${a}╿•${prefix}brainly${a} *[VIP]*
  ${a}╿•${prefix}pinterest${a}
  ${a}╿•${prefix}resepmasakan${a}
@@ -162,7 +160,7 @@ ${a}❏MEDIA MENU${a}
  ${a}╿•${prefix}tiktokstalk${a} *[VIP]*
  ${a}╿•${prefix}ssweb${a}
  ${a}╰•${prefix}kbbi${a}
-${a}❏SONG${a}
+${a}MUSICA${a}
  ${a}╰•${prefix}joox${a} *[VIP]*
 ${a}❏NSFW${a}
  ${a}╿•${prefix}anjing${a}
@@ -181,7 +179,7 @@ ${a}❏LIMIT & UANG${a}
  ${a}╿•${prefix}dompet${a}
  ${a}╿•${prefix}giftlimit${a}
  ${a}╰•${prefix}leaderboard${a}
-${a}❏GROUP MENU${a}
+${a}❏GRUPOS${a}
  ${a}╿•${prefix}delete${a}
  ${a}╿•${prefix}hidetag${a}
  ${a}╿•${prefix}blocklist${a}
@@ -204,7 +202,7 @@ ${a}❏GROUP MENU${a}
  ${a}╿•${prefix}welcome [1/0]${a}
  ${a}╿•${prefix}antilink [1/0]${a}
  ${a}╰•${prefix}nobadword [enable/disable]${a}
-${a}❏CLOUD STORAGE${a}
+${a}❏ALMACENAMIENTO${a}
  ${a}╿•${prefix}addsticker${a}
  ${a}╿•${prefix}getsticker${a}
  ${a}╿•${prefix}stickerlist${a}
@@ -217,7 +215,7 @@ ${a}❏CLOUD STORAGE${a}
  ${a}╿•${prefix}addaudio${a}
  ${a}╿•${prefix}getaudio${a}
  ${a}╰•${prefix}audiolist${a}
-${a}❏OWNER MENU${a}
+${a}❏MENU CREADOR${a}
  ${a}╿•${prefix}bc${a}
  ${a}╿•${prefix}addbadword${a}
  ${a}╿•${prefix}delbadword${a}
@@ -233,15 +231,10 @@ ${a}❏OWNER MENU${a}
  ${a}╿•${prefix}clone${a}
  ${a}╰•${prefix}setppbot${a}
  
-${a}❏THANGKS TO${a}
+${a}❏AGRADECIMIENTS${a}
  ${a}╿${a}
- ${a}╿ • AFFIS JUNIANTO <dev>${a}
- ${a}╿ • FADHIL GRAPHY <partner>${a}
- ${a}╿ • MHANKBARBARS <sc ori>${a}
- ${a}╿ • MYBOT TEAM <team>${a}
- ${a}╿${a}
- ${a}╿ • NOTE : jangan ubah donasi${a}
- ${a}╿${a}
+ ${a}╿ • Edgar${a}
+ ${a}╿ • King Andrew${a}
  ${a}╰━━━⊱  ⸨ X-BOT ⸩  ⊰━━━━${a}
 `
 }
@@ -266,7 +259,6 @@ exports.limitcount = (limitCounts) => {
 	return`
 *「 LIMIT COUNT 」*
 sisa limit anda : ${limitCounts}
-
 NOTE : untuk mendapatkan limit. bisa lewat naik level atau buylimit`
 }
 
@@ -280,14 +272,12 @@ exports.uangkau = (pushname, sender, uangkau) => {
 
 exports.premadd = (pnom) => {
 	return`*「 PREMIUM ADD 」*
-
 *Name* : ${pnom}
 *Expired* : 30 DAY\n*thank for order premium*`
 }
 
 exports.dellprem = (hnom) => {
 	return`*「 PREMIUM DELETE 」*
-
 *Name* : ${hnom}
 *Expired* : NOW:v\n*thank for order premium back soon for buying again:D*`
 }
@@ -295,4 +285,3 @@ exports.dellprem = (hnom) => {
 exports.premon = (pushname) => {
 	return`MAAF ${pushname} ANDA BUKAN USER PREMIUM`
 }
-
