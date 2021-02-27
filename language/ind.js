@@ -1,79 +1,79 @@
 const a = '```'
 
 exports.wait = () => {
-	return`*「 Esperar 」 EN CURSO*`
+	return`*「 👨‍💻ESPERAR 」 ESTE PROCESO PODRÍA TARDAR UNOS SEGUNDOS😔*`
 }
 
 exports.succes = () => {
-	return`*「 Éxito 」*`
+	return`*「 👨‍💻CON ÉXITO 」*`
 }
 
 exports.lvlon = () => {
-	return`*「 habilitar 」 Nivelación*`
+	return`*「 👨‍💻HABILITAR 」 NIVELACIÓN *`
 }
 
 exports.lvloff = () => {
-	return`*「 Desactivar 」 Nivelación*`
+	return`*「 👨‍💻DESACTIVAR 」 NIVELACIÓN *`
 }
 
 exports.lvlnul = () => {
-	return`*SU NIVEL SIGUE VACÍO*`
+	return`*👨‍💻SU NIVEL SIGUE VACÍO*`
 }
 
 exports.lvlnoon = () => {
-	return`*LOS NIVELES DE GRUB NO SE HAN ACTIVADO*`
+	return`*👨‍💻LOS NIVELES DE GRUB NO SE HAN ACTIVADO🍁*`
 }
 
 exports.noregis = () => {
-	return`*「 AÚN NO REGISTRADO 」*\n\n*cómo registrarse ${prefix}daftar Nombre|Edad* \n*Ejemplo ${prefix}daftar Edar|17*`
+	return`*「 👨‍💻AÚN NO REGISTRADO👤 」*\n\n*👉cómo registrarse ${prefix}daftar Nombre|Edad* \n*👉Ejemplo ${prefix}daftar Edar|17*`
 }
 
 exports.rediregis = () => {
-	return`*「 YA REGISTRADO 」*\n\n*Ya está registrado en la base de datos de bots*`
+	return`*「 👨‍💻YA REGISTRADO🌠 」*\n\n*📸Ya está registrado en la base de datos de bots🤖*`
 }
 
 exports.stikga = () => {
-	return`*bien no pudo tratar de repetir en unos momentos de nuevo*`
+	return`*👨‍💻bien no pudo tratar de repetir en unos momentos de nuevo😔*`
 }
 
 exports.linkga = () => {
-	return`*lo siento, el enlace no es válido*`
+	return`*👨‍💻lo siento, el enlace no es válido😔*`
 }
 
 exports.groupo = () => {
-	return`*「SOLO GRUPO」*`
+	return`*👨‍💻LO SIENTO 「ESTA FUNCIÓN SOLO ES PARA GRUPO」 SI AUN NO SABE LOS COMANDOS ESRIBA #MENU👈*`
 }
 
 exports.ownerb = () => {
-	return`*「SOLO BOT PROPIETARIO」*`
+	return`*「👨‍💻SOLO BOT PROPIETARIO😔」*`
 }
 
 exports.ownerg = () => {
-	return`*「SOLO GRUPO PROPIETARIO」*`
+	return`*「👨‍💻SOLO GRUPO PROPIETARIO😔」*`
 }
 
 exports.admin = () => {
-	return`*「SOLO GRUPO DE ADMINISTRACIÓN」*`
+	return`*👨‍💻LO SIENTO 「ESTA FUNCIÓN SOLO PUEDE SER UTILIZADA POR LOS ADMINISTRADORES DEL GRUPO🖕SI USTED DESEA DISFRUTAR DE ESTE COMANDO GANECE EL ADMIN SEA ACTIVO😉」*`
 }
 
 exports.badmin = () => {
-	return`*「BOT DEBE SER ADMINISTRADOR」*`
+	return`*「👨‍💻LO SIENTO😔EL BOT DEBE SER ADMINISTRADOR DEL GRUPO🙃」*`
 }
 
 exports.nsfwoff = () => {
-	return`*NSFW NO ACTIVO*`
+	return`*👨‍💻NSFW NO ACTIVO, PARA ACTIVAR ESTA FUNCIÓN ESCRIBA #NSFW 1😉*`
 }
 
 exports.bug = () => {
-	return`*El problema ha sido reportado al propietario del bot, informe falso / main2 no será respondido a*`
+	return`*👨‍💻El problema ha sido reportado al propietario del bot, informe falso / main2 no será respondido a😉*`
 }
 
 exports.wrongf = () => {
-	return`*formato/texto incorrecto en blanco*`
+	return`*👨‍💻formato/texto incorrecto en blanco👋ESCRIBA EL TEXTO ALA PAR DESPUÉS DEL COMANDO*`
 }
 
 exports.clears = () => {
-	return`*claro todo el éxito*`
+	return`*👨‍💻CLARO TODO EL ÉXITO😉*`
 }
 
 exports.pc = () => {
@@ -81,39 +81,39 @@ exports.pc = () => {
 }
 
 exports.registered = (namaUser, umurUser, serialUser, time, sender) => {
-	return`*「 DATOS DEL REGISTRO 」*\n\nkamu ya registrado con datos \n\n┏━⊱Nombre\n┗⊱${namaUser}\n┏━⊱Número\n┗⊱wa.me/${sender.split("@")[0]}\n┏━⊱Edad\n┗⊱${umurUser}\n┏━⊱tiempo de inscripción\n┗⊱${time}\n\n┏━❉ *NS* ❉━\n┣⊱${serialUser}\n┗⊱NOTA : no olvides este número porque es importante:v`
+	return`*「 🍭DATOS DEL REGISTRO🍭 」*\n\n *😼FELICIDADES USTED A SIDO KUAKIADO👨‍💻POR EDAR🎩OK NO👉👈\n\n┏━⊱Nombre\n┗⊱${namaUser}\n┏━⊱Número\n┗⊱wa.me/${sender.split("@")[0]}\n┏━⊱Edad\n┗⊱${umurUser}\n┏━⊱tiempo de inscripción\n┗⊱${time}\n\n┏━❉ *NS* ❉━\n┣⊱${serialUser}\n┗⊱NOTA : *No olvides este número porque es importante para tu próximo registro* :v`
 }
 
 exports.cmdnf = (prefix, command) => {
-	return`command *${prefix}${command}* tidak di temukan\coba tulis *${prefix}menu*`
+	return`command *${prefix}${command}* no encontrado\tratar de escribir *${prefix}menu*`
 }
 
 exports.owneresce = (pushname) => {
-	return`*Lo siento tapi ${pushname} bukan owner script*`
+	return`*👨‍💻Lo siento tapi ${pushname} bukan owner script*`
 }
 
 exports.reglevelaha = (command, pushname, getLevelingLevel, sender, aha) => {
-	return`*Lo siento ${pushname} level mu belum mencukupi*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${aha}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
+	return`*👨‍💻Lo siento ${pushname} Su nivel no es suficiente*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${aha}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
 }
 
 exports.reglevelahb = (command, pushname, getLevelingLevel, sender, ahb) => {
-	return`*Lo siento ${pushname} level mu belum mencukupi*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${ahb}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
+	return`*👨‍💻Lo siento ${pushname} su nivel no es suficiente*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${ahb}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
 }
 
 exports.reglevelahc = (command, pushname, getLevelingLevel, sender, ahc) => {
-	return`*Lo siento ${pushname} level mu belum mencukupi*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${ahc}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
+	return`*👨‍💻Lo siento ${pushname} Su nivel no es suficiente*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${ahc}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
 }
 
 exports.reglevelahd = (command, pushname, getLevelingLevel, sender, ahd) => {
-	return`*Lo siento ${pushname} level mu belum mencukupi*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${ahd}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
+	return`*👨‍💻Lo siento ${pushname} Su nivel no es suficiente*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${ahd}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
 }
 
 exports.reglevelahe = (command, pushname, getLevelingLevel, sender, ahe) => {
-	return`*Lo siento ${pushname} level mu belum mencukupi*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${ahe}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
+	return`*👨‍💻Lo siento ${pushname} Su nivel no es suficiente*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${ahe}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
 }
 
 exports.reglevelahf = (command, pushname, getLevelingLevel, sender, ahf) => {
-	return`*Lo siento ${pushname} level mu belum mencukupi*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${ahf}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
+	return`*👨‍💻Lo siento ${pushname} Su nivel no es suficiente*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${ahf}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
 }
 
 exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp, _registered, uangku, role, premi) => { 
@@ -131,12 +131,13 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
  *${prefix}info*
  *${prefix}donasi*
  *${prefix}owner*
-${a}❏MENU MAKER${a}
+*👨‍💻HOLA👋ESTOS SON ALGUNOS DE MIS COMANDOS😉*
+${a}*❏📸MENU MAKER🍃*${a}
  ${a}╿•${prefix}sticker${a}
  ${a}╿•${prefix}quotemaker${a}
  ${a}╿•${prefix}qrcode${a}
  ${a}╰•${prefix}ttp${a}
-${a}❏MENU DIVERTIDO${a}
+${a}*❏😉MENU DIVERTIDO😹*${a}
  ${a}╿•${prefix}lirik${a}
  ${a}╿•${prefix}artinama${a}
  ${a}╿•${prefix}chord${a}
@@ -148,10 +149,10 @@ ${a}❏MENU DIVERTIDO${a}
  ${a}╿•${prefix}tampar${a}
  ${a}╿•${prefix}moddroid${a} *[VIP]*
  ${a}╰•${prefix}happymod${a} *[VIP]*
-${a}❏MUTUAL${a}
+${a}*❏👨‍💻MUTUAL*${a}
  ${a}╿•${prefix}mutual${a}
  ${a}╰•${prefix}next${a}
-${a}❏MULTIMEDIA${a}
+${a}*❏🤖MULTIMEDIA👈*${a}
  ${a}╿•${prefix}brainly${a} *[VIP]*
  ${a}╿•${prefix}pinterest${a}
  ${a}╿•${prefix}resepmasakan${a}
@@ -160,9 +161,9 @@ ${a}❏MULTIMEDIA${a}
  ${a}╿•${prefix}tiktokstalk${a} *[VIP]*
  ${a}╿•${prefix}ssweb${a}
  ${a}╰•${prefix}kbbi${a}
-${a}MUSICA${a}
+${a}*MUSICA*${a}
  ${a}╰•${prefix}joox${a} *[VIP]*
-${a}❏NSFW${a}
+${a}*❏📸NSFW👉👈*${a}
  ${a}╿•${prefix}anjing${a}
  ${a}╿•${prefix}blowjob${a}
  ${a}╿•${prefix}nekonime${a}
@@ -172,14 +173,14 @@ ${a}❏NSFW${a}
  ${a}╿•${prefix}cium${a}
  ${a}╿•${prefix}peluk${a}
  ${a}╰•${prefix}ranime${a}
-${a}❏LIMIT & UANG${a}
+${a}*❏🤖LIMIT & UANG*${a}
  ${a}╿•${prefix}limit${a}
  ${a}╿•${prefix}buylimit${a}
  ${a}╿•${prefix}transfer${a}
  ${a}╿•${prefix}dompet${a}
  ${a}╿•${prefix}giftlimit${a}
  ${a}╰•${prefix}leaderboard${a}
-${a}❏MENU DE GRUPOS${a}
+${a}*❏👨‍💻MENU DE GRUPOS🍁*${a}
  ${a}╿•${prefix}delete${a}
  ${a}╿•${prefix}hidetag${a}
  ${a}╿•${prefix}blocklist${a}
@@ -202,7 +203,7 @@ ${a}❏MENU DE GRUPOS${a}
  ${a}╿•${prefix}welcome [1/0]${a}
  ${a}╿•${prefix}antilink [1/0]${a}
  ${a}╰•${prefix}nobadword [enable/disable]${a}
-${a}❏ALMACENAMIENTO${a}
+${a}*❏👨‍💻ALMACENAMIENTO👈*${a}
  ${a}╿•${prefix}addsticker${a}
  ${a}╿•${prefix}getsticker${a}
  ${a}╿•${prefix}stickerlist${a}
@@ -215,7 +216,7 @@ ${a}❏ALMACENAMIENTO${a}
  ${a}╿•${prefix}addaudio${a}
  ${a}╿•${prefix}getaudio${a}
  ${a}╰•${prefix}audiolist${a}
-${a}❏MENU CREADOR${a}
+${a}*❏👨‍💻MENU CREADOR*${a}
  ${a}╿•${prefix}bc${a}
  ${a}╿•${prefix}addbadword${a}
  ${a}╿•${prefix}delbadword${a}
@@ -233,7 +234,7 @@ ${a}❏MENU CREADOR${a}
  
 ${a}❏AGRADECIMIENTS${a}
  ${a}╿${a}
- ${a}╿ • Edgar${a}
+ ${a}╿ • *EDAR TU PAPI🎩*${a}
  ${a}╿ • wa.me/50498798682${a}
  ${a}╰━━━⊱  ⸨ X-BOT ⸩  ⊰━━━━${a}
 `
@@ -283,5 +284,5 @@ exports.dellprem = (hnom) => {
 }
 
 exports.premon = (pushname) => {
-	return`MAAF ${pushname} USTED NO ES UN USUARIO PREMIUM`
+	return`👨‍💻LO SIENTO😔 ${pushname} USTED NO ES UN USUARIO PREMIUM`
 }
