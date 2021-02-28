@@ -356,7 +356,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Hallo @${num.split('@')[0]}\Selamat datang di group *${mdata.subject}* yang betah ya di sini`
+				teks = `*🙊HOLA👋* @${num.split('@')[0]}\Bienvenido al grupo👉 *${mdata.subject}* *😉RECUERDA CUMPLIR CON LAS NORMATIVAS Y REGLAS DEL GRUPO PARA EVITAR SER ELIMINADO😉SOLO GENTE ACTIVA OK🍁*`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -366,7 +366,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `akhirnya beban group berkurang 𝟭,bye bye🥳 @${num.split('@')[0]} jasamu akan di kubur dalam²`
+				teks = `*😆finalmente, la carga del grupo se redujo en 1.bye bye👋 @${num.split('@')[0]} *no te extrañaremos🐤*`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -654,29 +654,29 @@ client.on('group-participants-update', async (anu) => {
 					client.updatePresence(from, Presence.composing)
 					if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 					var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-						reply(`Link Group Terdeteksi maaf ${sender.split("@")[0]} anda akan di kick dari group 5detik lagi`)
+						reply(`*☠️ENLACE DETECTADO,🖕ELIMINADO POR NO CUMPLIR LAS REGLAS🍁* ${sender.split("@")[0]} *SE LE ELIMINARÁ DEL GRUPO EN 5 SEGUNDOS*`)
 						setTimeout( () => {
 						client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 					}, 5000)
 						setTimeout( () => {
 						client.updatePresence(from, Presence.composing)
-						reply("1detik")
+						reply("1")
 					}, 4000)
 						setTimeout( () => {
 						client.updatePresence(from, Presence.composing)
-						reply("2detik")
+						reply("2")
 					}, 3000)
 						setTimeout( () => {
 						client.updatePresence(from, Presence.composing)
-						reply("3detik")
+						reply("3")
 					}, 2000)
 						setTimeout( () => {
 						client.updatePresence(from, Presence.composing)
-						reply("4detik")
+						reply("4")
 					}, 1000)
 						setTimeout( () => {
 						client.updatePresence(from, Presence.composing)
-						reply("5detik")
+						reply("5,SHUPALA🖕")
 					}, 0)
 				}
  	       
@@ -2179,7 +2179,7 @@ client.on('group-participants-update', async (anu) => {
 				
 				default:
 			if (body.startsWith(`${prefix}${command}`)) {
-                  reply(`Maaf *${pushname}*, Command *${prefix}${command}* Tidak Terdaftar Di Dalam *${prefix}menu*!`)
+                  reply(`🤔LO SIENTO:V *${pushname}*, EL COMANDO *${prefix}${command}* NO REGISTRADO EN *${prefix}menu*!`)
                   }
 			if (isGroup && !isCmd && isSimi && budy != undefined) {
 						console.log(budy)
