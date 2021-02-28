@@ -81,7 +81,7 @@ exports.pc = () => {
 }
 
 exports.registered = (namaUser, umurUser, serialUser, time, sender) => {
-	return`*「 🍭DATOS DEL REGISTRO🍭 」*\n\n *😼FELICIDADES USTED A SIDO KUAKIADO👨‍💻POR EDAR🎩OK NO👉👈\n\n┏━⊱Nombre\n┗⊱${namaUser}\n┏━⊱Número\n┗⊱wa.me/${sender.split("@")[0]}\n┏━⊱Edad\n┗⊱${umurUser}\n┏━⊱tiempo de inscripción\n┗⊱${time}\n\n┏━❉ *NS* ❉━\n┣⊱${serialUser}\n┗⊱NOTA : *No olvides este número porque es importante para tu próximo registro* :v`
+	return`*「 🍭DATOS DEL REGISTRO🍭 」*\n\n *😼FELICIDADES USTED A SIDO KUAKIADO👨‍💻POR EDAR🎩OK NO👉👈*\n\n┏━⊱Nombre\n┗⊱${namaUser}\n┏━⊱Número\n┗⊱wa.me/${sender.split("@")[0]}\n┏━⊱Edad\n┗⊱${umurUser}\n┏━⊱tiempo de inscripción\n┗⊱${time}\n\n┏━❉ *NS* ❉━\n┣⊱${serialUser}\n┗⊱NOTA : *No olvides este número porque es importante para tu próximo registro* :v`
 }
 
 exports.cmdnf = (prefix, command) => {
@@ -232,7 +232,7 @@ ${a}*❏👨‍💻MENU CREADOR*${a}
  ${a}╿•${prefix}clone${a}
  ${a}╰•${prefix}setppbot${a}
  
-${a}❏AGRADECIMIENTS${a}
+${a}❏😉AGRADECIMIENTS🍁${a}
  ${a}╿${a}
  ${a}╿ • *EDAR TU PAPI🎩*${a}
  ${a}╿ • wa.me/50498798682${a}
