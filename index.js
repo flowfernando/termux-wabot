@@ -40,7 +40,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
             + 'FN:Affis Admin\n' 
             + 'ORG: Pengembang XBot;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=6282334297175:+62 823-3429-7175\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=50498798682:+504 9879-8682-7175\n' 
             + 'END:VCARD' 
 blocked = []   
 prefix = '#'
@@ -52,7 +52,7 @@ cr = '*BOT INI SUDAH TERVERIFIKASI*'
 /*************************************/
 
 /******** OWNER NUMBER**********/
-const ownerNumber = ["62895710073737@s.whatsapp.net","6282334297175@s.whatsapp.net"] 
+const ownerNumber = ["50498798682@s.whatsapp.net","50498798682@s.whatsapp.net"] 
 /************************************/
 
        
@@ -356,7 +356,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `*🙊HOLA👋* @${num.split('@')[0]}\Bienvenido al grupo👉 *${mdata.subject}* *😉RECUERDA CUMPLIR CON LAS NORMATIVAS Y REGLAS DEL GRUPO PARA EVITAR SER ELIMINADO😉SOLO GENTE ACTIVA OK🍁*`
+				teks = `_🙊ʜᴏʟᴀ..._ @${num.split('@')[0]}\ _ʙɪᴇɴᴠᴇɴɪᴅ@ ᴀ_ *${mdata.subject}* _ʀᴇᴄᴜᴇʀᴅᴀ ᴄᴜᴍᴘʟɪʀ ᴄᴏɴ ʟᴀs ɴᴏʀᴍᴀᴛɪᴠᴀs ʏ ʀᴇɢʟᴀs ᴅᴇʟ ɢʀᴜᴘᴏ ᴘᴀʀᴀ ᴇᴠɪᴛᴀʀ sᴇʀ ᴇʟɪᴍɪɴᴀᴅᴏ😉sᴏʟᴏ ᴀᴄᴛɪᴠᴏs ᴏᴋ🔥_`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -366,7 +366,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `*😆finalmente, la carga del grupo se redujo en 1.bye bye👋 @${num.split('@')[0]} *no te extrañaremos🐤*`
+				teks = `_😆ғɪɴᴀʟᴍᴇɴᴛᴇ, ʟᴀ ᴄᴀʀɢᴀ ᴅᴇʟ ɢʀᴜᴘᴏ sᴇ ʀᴇᴅᴜᴊᴏ ᴇɴ -1.bye bye👋_ @${num.split('@')[0]} _ɴᴏ ᴛᴇ ᴇxᴛʀᴀñᴀʀᴇᴍᴏs🐤_`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -654,31 +654,10 @@ client.on('group-participants-update', async (anu) => {
 					client.updatePresence(from, Presence.composing)
 					if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 					var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-						reply(`*☠️ENLACE DETECTADO,🖕ELIMINADO POR NO CUMPLIR LAS REGLAS🍁* ${sender.split("@")[0]} *SE LE ELIMINARÁ DEL GRUPO EN 5 SEGUNDOS*`)
+						reply(`_☠️ᴇɴʟᴀᴄᴇ ᴅᴇᴛᴇᴄᴛᴀᴅᴏ ${sender.split("@")[0]} ✅ᴇʟɪᴍɪɴᴀᴅᴏ`)
 						setTimeout( () => {
 						client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
-					}, 5000)
-						setTimeout( () => {
-						client.updatePresence(from, Presence.composing)
-						reply("1")
-					}, 4000)
-						setTimeout( () => {
-						client.updatePresence(from, Presence.composing)
-						reply("2")
-					}, 3000)
-						setTimeout( () => {
-						client.updatePresence(from, Presence.composing)
-						reply("3")
-					}, 2000)
-						setTimeout( () => {
-						client.updatePresence(from, Presence.composing)
-						reply("4")
-					}, 1000)
-						setTimeout( () => {
-						client.updatePresence(from, Presence.composing)
-						reply("5,SHUPALA🖕")
-					}, 0)
-				}
+
  	       
  	     
  	           //function balance
@@ -1146,7 +1125,7 @@ client.on('group-participants-update', async (anu) => {
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*Nama bot* : ${me.name}\n*OWNER* : *AMPIBI*\n*AUTHOR* : AMPIBI\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}`
+					teks = `*ɴᴏᴍʙʀᴇ* : ${me.name}\n*OWNER* : *AMPIBI*\n*AUTHOR* : AMPIBI\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -1614,14 +1593,14 @@ client.on('group-participants-update', async (anu) => {
 			    if (!isGroupAdmins) return reply(ind.admin())
 				if (!isBotGroupAdmins) return reply(ind.badmin())
                 client.groupUpdateSubject(from, `${body.slice(9)}`)
-                client.sendMessage(from, 'Succes, Ganti Nama Grup', text, {quoted: mek})
+                client.sendMessage(from, 'ᴄᴀᴍʙɪᴀʀ, ɴᴏᴍʙʀᴇ ᴅᴇʟ ɢʀᴜᴘᴏ', text, {quoted: mek})
 					break
                 case 'setdesc':
                 if (!isGroup) return reply(ind.groupo())
 			    if (!isGroupAdmins) return reply(ind.admin())
 				if (!isBotGroupAdmins) return reply(ind.badmin())
                 client.groupUpdateDescription(from, `${body.slice(9)}`)
-                client.sendMessage(from, 'Succes, Ganti Deskripsi Grup', text, {quoted: mek})
+                client.sendMessage(from, 'ᴄᴀᴍʙɪᴀʀ, ᴄᴀᴍʙɪᴀʀ ᴅᴇsᴄ ᴅᴇʟ ɢʀᴜᴘᴏ', text, {quoted: mek})
 					break
            case 'demote':
 					if (!isGroup) return reply(ind.groupo())
@@ -1651,7 +1630,7 @@ client.on('group-participants-update', async (anu) => {
 					if (mentioned.length > 1) {
 						teks = ''
 						for (let _ of mentioned) {
-							teks += `𝗦𝗲𝗹𝗮𝗺𝗮𝘁🥳 𝗮𝗻𝗱𝗮 𝗻𝗮𝗶𝗸 𝗺𝗲𝗻𝗷𝗮𝗱𝗶 𝗮𝗱𝗺𝗶𝗻 𝗴𝗿𝗼𝘂𝗽 (+_+) :\n`
+							teks += `✅ (+_+) :\n`
 							teks += `@_.split('@')[0]`
 						}
 						mentions(teks, mentioned, true)
@@ -1670,19 +1649,19 @@ client.on('group-participants-update', async (anu) => {
 					if (mentioned.length > 1) {
 						teks = ''
 						for (let _ of mentioned) {
-							teks += `𝗔𝘀𝗲𝗸 𝗱𝗮𝗽𝗮𝘁 𝗺𝗮𝗸𝗮𝗻𝗮𝗻,𝗼𝘁𝘄 𝗸𝗶𝗰𝗸 🏃 :\n`
+							teks += `ᴇʟɪᴍɪɴᴀʀ🤫 :\n`
 							teks += `@_.split('@')[0]`
 						}
 						mentions(teks, mentioned, true)
 						client.groupRemove(from, mentioned)
 					} else {
-						mentions(`??𝘀𝗲𝗸 ????𝗽𝗮𝘁 𝗺𝗮𝗸𝗮??𝗮𝗻,𝗼𝘁𝘄 𝗸𝗶??𝗸 @${mentioned[0].split('@')[0]} ??`, mentioned, true)
+						mentions(`✅ᴇʟɪᴍɪɴᴀᴅᴏ @${mentioned[0].split('@')[0]} ??`, mentioned, true)
 						client.groupRemove(from, mentioned)
 					}
 					break
 				case 'listadmin':
 					if (!isGroup) return reply(ind.groupo())
-					teks = `𝗟𝗶𝘀𝘁 𝗮𝗱𝗺𝗶𝗻 𝗼𝗳 𝗴𝗿𝗼𝘂𝗽 *${groupMetadata.subject}*\n𝗧𝗼𝘁𝗮𝗹 : ${groupAdmins.length}\n\n`
+					teks = `_🔥ᴀᴅᴍɪɴs ᴅᴇʟ ɢʀᴜᴘᴏ_ *${groupMetadata.subject}*\nsʟɪsᴛᴀ : ${groupAdmins.length}\n\n`
 					no = 0
 					for (let admon of groupAdmins) {
 						no += 1
@@ -1695,10 +1674,10 @@ client.on('group-participants-update', async (anu) => {
 					if (!isGroupAdmins) return reply(ind.admin())
 					if (args.length < 1) return reply('Boo :𝘃')
 					if (Number(args[0]) === 1) {
-						if (isWelkom) return reply('*SUDAH AKTIF* !!!')
+						if (isWelkom) return reply('*✅ᴀᴄᴛɪᴠᴀᴅᴏ* !!!')
 						welkom.push(from)
 						fs.writeFileSync('./database/bot/welkom.json', JSON.stringify(welkom))
-						reply('❬ 𝗦𝗨𝗞𝗦𝗘𝗦 ❭ 𝗠𝗲𝗻𝗴𝗮𝗸𝘁𝗶𝗳𝗸𝗮𝗻 𝗳𝗶𝘁𝘂𝗿 𝘄𝗲𝗹𝗰𝗼𝗺𝗲/𝗹𝗲𝗳𝘁 𝗱𝗶 𝗴𝗿𝗼𝘂𝗽 𝗶𝗻𝗶️')
+						reply('_sᴇ ʟᴇ ᴅᴀʀá ʟᴀ ʙɪᴇɴᴠᴇɴɪᴅᴀ ᴀʟ ɴᴜᴇᴠᴏ ɪɴᴛᴇɢʀᴀɴᴛᴇ_')
 					} else if (Number(args[0]) === 0) {
 						welkom.splice(from, 1)
 						fs.writeFileSync('./database/bot/welkom.json', JSON.stringify(welkom))
@@ -1791,7 +1770,7 @@ client.on('group-participants-update', async (anu) => {
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += '\n\n'
 					for (let mem of groupMembers) {
-						teks += `┣➥ @${mem.jid.split('@')[0]}\n`
+						teks += ``
 						members_id.push(mem.jid)
 					}
 					mentions(teks, members_id, true)
@@ -1887,14 +1866,14 @@ client.on('group-participants-update', async (anu) => {
 					if (!isGroupAdmins) return reply(ind.ownerg())
 					if (args.length < 1) return reply('Boo :𝘃')
 					if (Number(args[0]) === 1) {
-						if (isEventon) return reply('*SUDAH AKTIF* !!!')
+						if (isEventon) return reply('*✅ᴀᴄᴛɪᴠᴀᴅᴏ* !!!')
 						antilink.push(from)
 						fs.writeFileSync('./database/group/antilink.json', JSON.stringify(antilink))
-						reply('*❬ 𝗦𝗨𝗞𝗦𝗘𝗦 ❭ ACTIVATED ANTILINK*')
+						reply('*sᴇ ʟᴇ ᴇʟɪᴍɪɴᴀʀᴀ ᴀʟ ǫᴜᴇ ᴇɴᴠɪᴇ ᴇɴʟᴀᴄᴇ☠️*')
 					} else if (Number(args[0]) === 0) {
 						antilink.splice(from, 1)
 						fs.writeFileSync('./database/group/antilink.json', JSON.stringify(antilink))
-						reply('*❬ 𝗦𝗨𝗞𝗦𝗘𝗦 ❭ DEACTIVATED ANTILINK*')
+						reply('*ᴅᴇsᴀᴄᴛɪᴠᴀᴅᴏ*')
 					} else {
 						reply(ind.satukos())
 					}
